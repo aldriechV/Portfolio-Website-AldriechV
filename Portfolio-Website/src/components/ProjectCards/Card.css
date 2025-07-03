@@ -10,20 +10,39 @@
     display: inline-block;
 }
 
-.card .card-image{
-  width: 30%;         
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 10px; 
-}
-
 .card .card-title{
  font-family: Arial,sans-serif;
  margin: 0;
- color: black;
+ color: #F4F7F9;
 }
 
 .card .card-desc{
     font-family: Arial,sans-serif;
-    color: black;
+    color: #F4F7F9;
+}
+
+.card .card-button{
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #5e8bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: row;
+}
+
+.card .card-button:hover{
+  background: #F4F7F9;
+  color: #1C2A39;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row; /* default actually, but explicit */
+  gap: 10px; /* space between buttons */
+  justify-content: center; /* center horizontally inside card */
 }
