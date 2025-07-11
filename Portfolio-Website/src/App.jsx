@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { use, useState } from 'react'
 import './index.css'
 // Component Imports
 import Navbar from './components/Navbar/Navbar'
 import Card from './components/ProjectCards/Card'
 import { projects } from './components/ProjectCards/Projects'
+import Contact from './components/ContactMe/Contact'
 
 const App = () => {
 
@@ -18,6 +19,7 @@ const App = () => {
             return <Card key={index} experience={projects}/>;
         })}
       </div>
+      <Contact />
     </div>
 
   )

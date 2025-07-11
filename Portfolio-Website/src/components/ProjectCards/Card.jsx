@@ -7,13 +7,13 @@ const Card = (button) => {
 
     return(
         <div className="card">
-            <h2 className="card-title"> { projectName } </h2>
-            <p className="card-desc"> { description } </p>
-            <div className ="button-container">
-                <button className="card-button"> More</button>
-                <button className="card-button" onClick={projectLink}> <FaGithub style={{ marginRight: '8px' }} />
-      GitHub</button>
-            </div>
+                <h2 className="card-title"> { projectName } </h2>
+                <p className="card-desc"> { description } </p>
+                <div className ="button-container">
+                    <button className="card-button"> More</button>
+                    <button className="card-button" onClick={projectLink}> <FaGithub style={{ marginRight: '8px' }} />
+        GitHub</button>
+                </div>
         </div>
     );
 }

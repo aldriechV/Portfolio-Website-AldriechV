@@ -1,15 +1,14 @@
-.navbar{
-    width: 85%;
-    margin: auto; 
+.navbar {
+    width: 100%;
+    position: fixed;
+    background: #1c1c1c;
+    color: #F4F7F9;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #1C2A39;
-    color: #F4F7F9;
     padding: 15px 7%;
-    padding-top: 20px;
-    transition: 0.5s;
-    border-radius: 75px;
+    z-index: 1000;
+    box-sizing: border-box;
 }
 .logo{
     width: 160px;
@@ -54,18 +53,4 @@ ul li{
     cursor: pointer;
     margin-left: 40px;
     
-}
-/* Dark mode Toggles and Features */
-.dark .navbar{
-    background: #000;
-    color: #F4F7F9;
-}
-.dark .search-box{
-    background: #222;
-}
-.dark .search-box input{
-    background: #222;
-}
-.dark .search-box input::placeholder{
-    background: #222;
 }
