@@ -5,15 +5,16 @@ import Navbar from './components/Navbar/Navbar'
 import Card from './components/ProjectCards/Card'
 import { projects } from './components/ProjectCards/Projects'
 import Contact from './components/ContactMe/Contact'
+import Landing from './components/Landing/Landing'
 
 const App = () => {
-
-  const [theme, setTheme] = useState('light');
-
   return (
-    // Components for NavBar and Project Keys are over here 
-    <div className={`container ${theme}`}>
-      <Navbar theme={theme} setTheme={setTheme}/>
+    // Components for NavBar, Projects, and Contacts are over here 
+    <div className={`container`}>
+      <Navbar/>
+      <div className='home'>
+         <Landing/>
+      </div>
       <div className='projects-grid'>
         {projects.map((projects, index) => {
             return <Card key={index} experience={projects}/>;
@@ -21,7 +22,6 @@ const App = () => {
       </div>
       <Contact />
     </div>
-
   )
 }
 

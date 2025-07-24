@@ -4,15 +4,19 @@
   box-sizing: border-box;
   font-family: sans-serif;  
 }
+body{
+  background: #1c1c1c;
+  color: #F4F7F9;
+  font-size: 16px;
+}
 .container{
   width: 100vw;
   min-height: 100vh;
-  background: #1c1c1c;
   transition: 0.5s;
 
 }
-.container.dark{
-  background: #222;
+.Landing{
+  padding-top: 100px;
 }
 /* Projects Grid CSS*/
 .projects-grid {
