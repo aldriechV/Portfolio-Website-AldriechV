@@ -16,19 +16,18 @@
 .homeContent h3{
    font-size: 32px;
    font-weight: 700; 
+   color: #00abf0;
 }
 .homeContent p{
     font-size: 16px;
-    margin: 20px  0 40px;
-
-
+    margin: 20px 0 40px;
 }
-.buttons{
+
+.homeContent .buttons{
     display: flex;
     justify-content: space-between;
-    width: 345px;
+    width:345px;
     height: 50px;
-
 }
 
 .buttons a{
@@ -46,20 +45,40 @@
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
-    z-index: -1;
+    z-index: 1;
+    overflow: hidden;
 }
+
+
 .buttons a:nth-child(2){
     background: transparent;
     color: #00abf0;
 }
 
-.button a::before{
+.buttons a:nth-child(2):hover{
+    color: #081b29;
+}
+
+.buttons a:nth-child(2)::before{
+    background: #00abf0;
+}
+
+.buttons a::before{
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    width: 0;
     height: 100%;
-    background: red;
+    background: #081b29;
+    left: 0;
+    top: 0;
+    transition: width .3s ease-in-out;
     z-index: -1;
+}
+
+.buttons a:hover{
+    color: #00abf0;
+}
+
+.buttons a:hover::before{
+    width: 100%;
 }

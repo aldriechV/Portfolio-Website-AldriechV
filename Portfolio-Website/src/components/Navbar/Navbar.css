@@ -56,3 +56,15 @@ ul li{
     margin-left: 40px;
     
 }
+
+.landing-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.landing-image img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 12px;
+}

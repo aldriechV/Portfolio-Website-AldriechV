@@ -15,6 +15,7 @@ const App = () => {
       <div className='home'>
          <Landing/>
       </div>
+      <h1 className='projects'>Projects</h1>
       <div className='projects-grid'>
         {projects.map((projects, index) => {
             return <Card key={index} experience={projects}/>;
