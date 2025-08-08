@@ -15,13 +15,15 @@ const App = () => {
       <div className='home'>
          <Landing/>
       </div>
-      <h1 className='projects'>Projects</h1>
+      <h1 className='projects' align='center'>Projects</h1>
       <div className='projects-grid'>
         {projects.map((projects, index) => {
             return <Card key={index} experience={projects}/>;
         })}
       </div>
-      <Contact />
+      <h1 className='contact' align='center'>Contact Me</h1>
+      <Contact/>
+
     </div>
   )
 }

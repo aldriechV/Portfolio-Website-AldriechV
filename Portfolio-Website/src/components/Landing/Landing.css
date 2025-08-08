@@ -82,3 +82,10 @@
 .buttons a:hover::before{
     width: 100%;
 }
+.landing-image img {
+  max-width: 100%;
+  height: auto;          /* Keeps aspect ratio */
+  max-height: 500px;     /* Optional: prevents it from getting too tall */
+  border-radius: 12px;
+  object-fit: cover;     /* Crops if needed but keeps aspect ratio */
+}
