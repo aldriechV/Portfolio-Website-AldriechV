@@ -9,9 +9,9 @@ const Navbar = () => {
         <img src={logo_light} alt="" className='logo'/>
         <div className="nav-links">
           <ul>
-              <li>Home</li>
-              <li>Projects</li>
-              <li>Contact Me</li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact Me</a></li>
           </ul>
         </div>
     </div>

@@ -7,15 +7,15 @@ const Contact = () => {
     <div className="contactInfo">
         <div className='contactItem'>
             <FaPhone />
-            <span>thi-sis-anum</span>
+            <span>562-991-4994</span>
         </div>
         <div className='contactItem'>
             <FaEnvelope />
-            <span>domain@gmail.com</span>
+            <span>aldriechvillamor0922@gmail.com</span>
         </div>
         <div className='contactItem'>
             <FaMapMarkerAlt />
-            <span>A Place, California</span>
+            <span>Santa Ana, California</span>
         </div>
     </div>
     
